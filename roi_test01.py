@@ -1,4 +1,3 @@
-import numpy as np
 import cv2
 
 img = cv2.imread('images/2.jpg')
@@ -35,7 +34,6 @@ b, g, r = cv2.split(img)
 print(img[100, 100])
 print(b[100, 100], g[100, 100], r[100, 100])
 
-
 cv2.imshow('blue', b)
 cv2.imshow('green', g)
 cv2.imshow('red', r)
@@ -43,9 +41,7 @@ cv2.imshow('red', r)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-
-merged_img = cv2.merge((b,g,r))
+merged_img = cv2.merge((b, g, r))
 cv2.imshow('merged', merged_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-

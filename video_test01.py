@@ -1,6 +1,3 @@
-__author__ = 'kosangmin822@gmail.com'
-
-import numpy as np
 import cv2
 
 

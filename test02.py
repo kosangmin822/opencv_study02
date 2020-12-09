@@ -1,6 +1,6 @@
 import cv2
-import numpy as np
 import matplotlib.pyplot as plt
+
 
 def showImage():
     imgfile = 'images/1.jpg'
@@ -11,5 +11,6 @@ def showImage():
     plt.yticks([])
     plt.title('model')
     plt.show()
+
 
 showImage()

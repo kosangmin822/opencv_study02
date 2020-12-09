@@ -4,8 +4,6 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 import cv2
-import numpy as np
-import matplotlib.pyplot as plt
 
 
 def showImage():
@@ -13,7 +11,6 @@ def showImage():
     img = cv2.imread(imgfile, cv2.IMREAD_COLOR)
     cv2.namedWindow('model', cv2.WINDOW_NORMAL)
     cv2.imshow('model', img)
-
 
     k = cv2.waitKey(0) & 0xFF
     if k == 27:

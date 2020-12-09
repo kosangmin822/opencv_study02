@@ -1,6 +1,7 @@
-import numpy as np
-import cv2
 from random import shuffle
+
+import cv2
+import numpy as np
 
 b = [i for i in range(256)]
 g = [i for i in range(256)]

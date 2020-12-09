@@ -1,7 +1,8 @@
-import numpy as np
-import cv2
-from random import shuffle
 import math
+from random import shuffle
+
+import cv2
+import numpy as np
 
 mode, drawing = True, False
 ix, iy = -1, -1
