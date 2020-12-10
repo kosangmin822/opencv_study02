@@ -18,10 +18,10 @@ def tracking():
         upper_blue = np.array([150, 255, 255])
 
         lower_green = np.array([30, 100, 100])
-        upper_green = np.array([90, 100, 100])
+        upper_green = np.array([90, 255, 255])
 
         lower_red = np.array([-30, 100, 100])
-        upper_red = np.array([30, 100, 100])
+        upper_red = np.array([30, 255, 255])
 
         mask_blue = cv2.inRange(hsv, lower_blue, upper_blue)
         mask_green = cv2.inRange(hsv, lower_green, upper_green)
