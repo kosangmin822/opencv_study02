@@ -3,7 +3,7 @@ import cv2
 
 
 def contour():
-    img = cv2.imread('images/3.jpg')
+    img = cv2.imread('images/b.jpg')
     imgray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     ret, thr = cv2.threshold(imgray, 127, 255, 0)
