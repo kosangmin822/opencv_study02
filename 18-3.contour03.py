@@ -10,16 +10,16 @@ def contour():
     contours, _ = cv2.findContours(thr, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
     cnt = contours[0]
-    cv2.drawContours(img, [cnt], 0, (255, 255, 0), 1)
+    cv2.drawContours(img, [cnt], 0, (0, 0, 255), 3)
 
-    epsilon1 = 0.02 * cv2.arcLength(cnt, True)
+    epsilon1 = 0.01 * cv2.arcLength(cnt, True)
     epsilon2 = 0.1 * cv2.arcLength(cnt, True)
 
     approx1 = cv2.approxPolyDP(cnt, epsilon1, True)
     approx2 = cv2.approxPolyDP(cnt, epsilon2, True)
 
     img1 = cv2.drawContours(img, [approx1], 0, (0, 255, 0), 3)
-    img2 = cv2.drawContours(img, [approx2], 0, (0, 255, 0), 3)
+    img2 = cv2.drawContours(img, [approx2], 0, (255, 0, 0), 10)
 
     cv2.imshow('contour', img)
     cv2.imshow('approx1', img1)
